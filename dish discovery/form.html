@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Registration</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <marquee direction="right" behavior="alternate">
+ WELCOME TO DISH DISCOVERY !! 
+ 
+</marquee>
+<div class="container">
+    <h2>Membership Registration</h2>
+    <form id="membershipForm" action="/action" >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="contact">Email:</label>
+        <input type="text" id="contact" name="contact" required>
+
+        <label for="membershipPlan">Select Membership Plan:</label>
+        <select id="membershipPlan" name="membershipPlan">
+            <option value="starter">Starter Membership</option>
+            <option value="standard">Standard Membership</option>
+            <option value="premium">Premium Membership</option>
+        </select>
+     
+        <label for="currency">Select Currency:</label>
+        <select id="membershipcurrency" name="membershipcurrency" >
+
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+            <option value="inr">INR</option>
+        </select>
+
+        <button type="button" onclick="calculateTotal()">Calculate Total</button>
+
+        <div id="total-cost"></div>
+
+        <button type="submit">Register </button>
+        <button  ><a href="pay.html">proceed to pay</a> </button>
+    </form>
+</div>
+
+<script src="form.js"></script>
+</body>
+</html>
